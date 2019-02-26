@@ -1,5 +1,5 @@
 <template>
-    <main id="addTodo">
+    <main id="addTodo" v-touch:swipe.right="swipe">
         <header>
             <p>Dela denna lista via:</p>
             <p>https://kungog.se/</p>
@@ -16,7 +16,11 @@
 <script>
 export default {
     name: 'AddTodo',
-
+    methods: {
+        swipe(e) {
+            this.$emit('swipe', 0)
+        }
+    }
 }
 </script>
 <style lang="scss">

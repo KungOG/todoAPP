@@ -1,6 +1,6 @@
 <template>
-    <article class="todos">
-        <aside class="done">
+    <article class="todos" :class="{completed : todo.done}">
+        <aside class="done" v-if="todo.done">
             <img src="../assets/check.svg" alt="done">
         </aside>
         <section class="text">

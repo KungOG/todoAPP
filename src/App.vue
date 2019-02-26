@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <section class="slider">
-      <Todo :todos="todos"/>
-      <AddTodo />
+    <section class="slider" :class="'slide-' + activeSlide">
+      <Todo :todos="todos" @swipe="handleSwipe" />
+      <AddTodo @swipe="handleSwipe" />
       </section>
   </div>
 </template>
@@ -16,19 +16,22 @@ export default {
       todos: [
         {done: false, text: 'Köp Bananer'},
         {done: false, text: 'Köp Ketchup'},
-        {done: false, text: 'Köp Godis'}
-      ]
+        {done: true, text: 'Köp Godis'}
+      ],
+      activeSlide: 0
     }
   },
   components: {
     Todo,
     AddTodo
+  },
+  methods: {
+    handleSwipe (e) {
+      this.activeSlide = e;
+    }
   }
 }
 </script>
 <style lang="scss">
 @import './scss/main.scss';
-
-
-
 </style>
