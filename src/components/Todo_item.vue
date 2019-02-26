@@ -1,5 +1,5 @@
 <template>
-    <article class="todo">
+    <article class="todos">
         <aside class="done">
             <img src="../assets/check.svg" alt="done">
         </aside>
@@ -11,19 +11,11 @@
 
 <script>
 export default {
-    name: 'todo',
-    data () {
-        return {
-            todo: {
-                text: 'Bananer',
-                done: false
-            }
-        }
-    }
+    name: 'todos',
+    props: ['todo'],
+
 }
 </script>
-
 <style lang="scss">
-
 </style>
 

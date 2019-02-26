@@ -4,8 +4,8 @@
             <p>Dela denna lista via:</p>
             <p>https://kungog.se/</p>
         </header>
-        <section>
-            <input>
+        <section class="content">
+            <input type="text" >
         </section>
         <footer>
             <a href="#" class="btn">Lägg till!</a>
@@ -20,7 +20,4 @@ export default {
 }
 </script>
 <style lang="scss">
-#addTodo {
-    background: yellow;
-}
 </style>
