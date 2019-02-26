@@ -1,30 +1,28 @@
 <template>
-    <main id="todo">
-       <section class="main-todo">
+    <main id="todos">
+       <header>
             <h1>Telefon</h1>
             <h3>hjälp när det inte fastnar</h3>
+       </header>
+       <section class="content">
+           <todoitem />
        </section>
-       <section>
-           <ul>
-               <li>Köpa</li>
-               <li>Lista</li>
-               <li>Makaroner</li>
-               <li>Bilar</li>
-           </ul>
-       </section>
+       <footer>
+           <a href="#" class="btn">Slide to add new Todo</a>
+        </footer>
     </main>
 </template>
-
 <script>
+import todoitem from '../components/Todo_item';
+
 export default {
-    name: 'todo',
-    data () {
-        return {
-            todo: {
-                text: 'Bananer',
-                done: false
-            }
-        }
+    name: 'todos',
+    components: {
+        todoitem
     }
+
 }
 </script>
+<style>
+
+</style>

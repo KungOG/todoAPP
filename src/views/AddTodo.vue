@@ -1,15 +1,15 @@
 <template>
     <main id="addTodo">
-        <section>
+        <header>
             <p>Dela denna lista via:</p>
             <p>https://kungog.se/</p>
-        </section>
+        </header>
         <section>
             <input>
         </section>
-        <section>
-            <button>Lägg till!</button>
-        </section>
+        <footer>
+            <a href="#" class="btn">Lägg till!</a>
+        </footer>
     </main>
 </template>
 
