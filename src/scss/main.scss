@@ -22,7 +22,7 @@ body {
             display: flex;
             height: inherit;
             transition: transform .2s ease;
-            
+
             &.slide-0 {
                 transform: translate3d(0,0,0);
             }
@@ -82,7 +82,7 @@ body {
                         input {
                             font-size: 1.4rem;
                             font-weight: 700;
-                            border: none;
+                            border: 1px solid #222;
                             appearance: none;
                             background: none;
                             text-align: center;
